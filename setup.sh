@@ -2,12 +2,18 @@
 
 # Update package list and install Python 3 and pip
 sudo apt update
-sudo apt install -y python3 python3-pip
+sudo apt install -y python3 python3-pip python3-venv curl
 
-# Install required Python libraries
-pip3 install streamlit pandas PyPDF2 python-docx
+# Create a virtual environment with the new name
+python3 -m venv AIvenv
 
-# Install Ollama (Make sure you have curl or wget installed)
+# Activate the virtual environment
+source AIvenv/bin/activate
+
+# Install required Python libraries within the virtual environment
+pip install streamlit pandas PyPDF2 python-docx ollama
+
+# Install Ollama
 if [ "$(uname)" == "Linux" ]; then
     curl -sSfL https://ollama.com/download.sh | sh
 fi
@@ -15,3 +21,6 @@ fi
 # Download and install models
 ollama pull qwen:0.5
 ollama pull phi3:mini
+
+# Deactivate the virtual environment
+deactivate
