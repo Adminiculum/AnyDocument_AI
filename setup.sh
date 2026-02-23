@@ -15,7 +15,7 @@ pip install streamlit pandas PyPDF2 python-docx ollama
 
 # Install Ollama
 if [ "$(uname)" == "Linux" ]; then
-    curl -sSfL https://ollama.com/download.sh | sh
+    curl -fsSL https://ollama.com/install.sh | sh
 fi
 
 # Download and install models
