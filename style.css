@@ -1,0 +1,144 @@
+/* style.css - AnyDocument AI */
+
+/* ── Global typography ── */
+html, body, [class*="css"] {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* ── Sidebar avec fond vert très clair ── */
+[data-testid="stSidebar"] {
+    background: linear-gradient(160deg, #e8f5e9 0%, #c8e6c9 100%);
+}
+
+/* ── TOUS les textes de la sidebar en noir non gras ── */
+[data-testid="stSidebar"] * {
+    color: #000000 !important;
+    font-weight: 400 !important;
+}
+
+[data-testid="stSidebar"] .stSelectbox label,
+[data-testid="stSidebar"] .stFileUploader label,
+[data-testid="stSidebar"] .stMarkdown,
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3,
+[data-testid="stSidebar"] h4,
+[data-testid="stSidebar"] h5,
+[data-testid="stSidebar"] h6,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] div,
+[data-testid="stSidebar"] small,
+[data-testid="stSidebar"] .stAlert,
+[data-testid="stSidebar"] .stInfo,
+[data-testid="stSidebar"] .stSuccess,
+[data-testid="stSidebar"] .st-bq {
+    color: #000000 !important;
+    font-weight: 400 !important;
+}
+
+/* ── Texte spécifique pour Upload Documents ── */
+[data-testid="stSidebar"] [data-testid="stFileUploader"] * {
+    color: #000000 !important;
+    font-weight: 400 !important;
+}
+
+/* ── Texte "Drag and drop files here..." ── */
+[data-testid="stSidebar"] .stFileUploader div[data-testid="stMarkdownContainer"] p {
+    color: #000000 !important;
+    font-weight: 400 !important;
+}
+
+/* ── Texte "No files uploaded yet" ── */
+[data-testid="stSidebar"] .stInfo {
+    color: #000000 !important;
+    font-weight: 400 !important;
+    background-color: #ffffff;
+}
+
+/* ── Liens dans la sidebar ── */
+[data-testid="stSidebar"] a {
+    color: #000000 !important;
+    font-weight: 400 !important;
+}
+
+/* ── Main area ── */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    max-width: 900px;
+}
+
+/* ── Hero header ── */
+.hero-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #2e7d32, #4caf50, #81c784);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.25rem;
+}
+.hero-subtitle {
+    color: #1e293b;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* ── Onboarding card ── */
+.card {
+    background: #f1f8e9;
+    border: 1px solid #a5d6a7;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+}
+.card h4, .card ol, .card li {
+    color: #1e293b;
+}
+
+/* ── Chat bubbles ── */
+[data-testid="stChatMessage"] {
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+}
+
+/* ── Primary button ── */
+.stButton > button[kind="primary"] {
+    background: linear-gradient(90deg, #2e7d32, #4caf50);
+    border: none;
+    border-radius: 8px;
+    color: white !important;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    transition: opacity 0.2s;
+}
+.stButton > button[kind="primary"]:hover {
+    opacity: 0.88;
+}
+
+/* ── Secondary buttons ── */
+.stButton > button {
+    border-radius: 8px;
+    font-weight: 500;
+    color: #1e293b;
+}
+
+/* ── Divider ── */
+hr { border-color: #a5d6a7; }
+
+/* ── Dataframe ── */
+[data-testid="stDataFrame"] {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ── Text colors in main area ── */
+.main p, .main h1, .main h2, .main h3, .main h4, .main h5, .main h6, 
+.main li, .main span, .main div:not([data-testid="stSidebar"] *) {
+    color: #1e293b;
+}
+
+/* ── Success/Warning/Error messages in main area ── */
+.main .stAlert {
+    color: #1e293b;
+}
