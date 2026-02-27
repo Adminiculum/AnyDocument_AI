@@ -52,7 +52,7 @@ fi
 # ── 5. Starter models ─────────────────────────────────────────────────────────
 info "Pulling starter models (this may take a while on first run)…"
 ollama pull llama3.2:3b  || warning "Could not pull qwen:0.5b — skipping."
-ollama pull qwen2.5:7b   || warning "Could not pull phi3:mini — skipping."
+ollama pull qwen2.5:3b   || warning "Could not pull phi3:mini — skipping."
 
 # ── Done ──────────────────────────────────────────────────────────────────────
 echo ""
