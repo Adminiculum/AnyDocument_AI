@@ -51,18 +51,19 @@ Users can install additional models to suit their computer's specifications. Vis
 1. Clone the repository:
    
    git clone https://github.com/Adminiculum/AnyDocument_AI.git
+   
    cd AnyDocument_AI
 
-2. Make the setup and run scripts executable:
+3. Make the setup and run scripts executable:
   
    chmod +x setup.sh
    chmod +x run.sh
 
-3. Run the setup script to install dependencies and models:
+4. Run the setup script to install dependencies and models:
    
    ./setup.sh
 
-4. Run the Streamlit application:
+5. Run the Streamlit application:
    
    ./run.sh
 
